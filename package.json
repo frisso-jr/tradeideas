@@ -1,0 +1,14 @@
+{
+  "name": "trade-ideas",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "fetch":  "node scripts/fetch-sheet.js",
+    "build":  "node scripts/build.js",
+    "dev":    "npm run fetch && npm run build",
+    "deploy": "npm run dev"
+  },
+  "dependencies": {
+    "googleapis": "^144.0.0"
+  }
+}
