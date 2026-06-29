@@ -112,7 +112,7 @@ const html = `<!DOCTYPE html>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
-<body>
+<body data-webhook-url="https://script.google.com/macros/s/AKfycbzCFqoXJKrlTM382I0-T1cYMlJa2TmajRc9gXPqaBYkEVEPeXbUQpVZcT7Fpy8Bb7gG_Q/exec">
 
 <header class="topbar">
   <div class="profile">
