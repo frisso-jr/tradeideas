@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>João Silva · Trade Ideas</title>
+<title>João Silva · Ideias de Trade</title>
 <meta name="description" content="Swing trade em ações BR e cripto desde 2018.">
+<meta name="theme-color" content="#1D9E75">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
-<body>
+<body data-webhook-url="">
 
 <header class="topbar">
   <div class="profile">
@@ -19,17 +20,24 @@
     </div>
   </div>
   <div class="topstats">
-    <div class="ts"><div class="ts-val ">+0.0%</div><div class="ts-lbl">acumulado</div></div>
-    <div class="ts"><div class="ts-val">0%</div><div class="ts-lbl">win rate</div></div>
-    <div class="ts"><div class="ts-val">6</div><div class="ts-lbl">trades</div></div>
+    <div class="ts">
+      <div class="ts-val ">+0.0%</div>
+      <div class="ts-lbl">acumulado</div>
+    </div>
+    <div class="ts">
+      <div class="ts-val">—</div>
+      <div class="ts-lbl">win rate</div>
+    </div>
+    <div class="ts">
+      <div class="ts-val">5</div>
+      <div class="ts-lbl">trades</div>
+    </div>
   </div>
 </header>
-
 <nav class="nav">
   <a class="nav-item active" href="index.html">Trade ideas</a>
   <a class="nav-item" href="performance.html">Performance</a>
 </nav>
-
 <main class="page">
   <div class="toolbar">
     <div class="filters">
@@ -40,222 +48,370 @@
       <button class="pill" data-filter="short">Short</button>
     </div>
     <div class="toolbar-right">
-      <input class="search" type="search" placeholder="Buscar ativo ou tag…" id="search">
-      <span class="count" id="count">6 trades</span>
+      <input class="search" type="search" placeholder="Buscar ativo ou tag…" id="search" aria-label="Buscar trade">
+      <span class="count" id="count">5 trades</span>
     </div>
   </div>
 
   <div class="subscribe-bar">
     <span>Receba as trade ideas por e-mail</span>
-    <form class="sub-form" id="subForm">
-      <input type="email" placeholder="seu@email.com" required id="subEmail">
-      <button type="submit">Inscrever</button>
+    <form class="sub-form" id="subForm" onsubmit="return false">
+      <input type="email" placeholder="seu@email.com" required id="subEmail" aria-label="Seu e-mail">
+      <button type="submit" onclick="inscrever()">Inscrever</button>
     </form>
   </div>
 
   <div class="feed" id="feed">
     
-<article class="card" data-dir="short" data-status="aberta" data-tags="Diário" data-ativo="RAIL3">
-  <div class="card-top">
-    <div class="card-asset">
+<article class="card"
+  id="card-0"
+  data-dir="short"
+  data-status="aberta"
+  data-tags="diário"
+  data-ativo="rail3"
+  data-entrada="13,29">
+
+  <div class="card-collapsed" onclick="toggleCard('card-0')">
+    <div class="card-left">
       <div class="ticker">RAIL3</div>
-      <span class="badge bshort">Short</span>
+      <span class="dir-badge short"><i class="ti ti-trending-down" aria-hidden="true"></i> Short</span>
     </div>
     <div class="card-mid">
-      <div class="card-badges">
-        <span class="badge bopen">Aberta</span>
-        <span class="meta">Swing · 29/06/2026</span>
+      <div class="card-status-row">
+        <span class="status-badge s-aberta">Aberta</span>
+        <span class="card-meta">Swing · 29/06/2026</span>
       </div>
-      <p class="rational">Ação em tendência de baixa, fez um repique até a MM21 e acionou o setup PC.</p>
-      <p class="tags">Diário</p>
+      <p class="card-rat">Ação em tendência de baixa, fez um repique até a MM21 e acionou o setup PC.</p>
+      <p class="card-tags">Diário</p>
     </div>
-    <div class="card-right">
+    <div class="card-right" id="right-0">
       <div class="result nd">em aberto</div>
       <div class="levels">stop 13,86<br>alvo 12,17</div>
     </div>
   </div>
-  <div class="card-body">
-    <div class="det-grid">
-      <div class="det"><div class="det-lbl">Entrada</div><div class="det-val">13,29</div></div>
-      <div class="det"><div class="det-lbl">Stop</div><div class="det-val neg">13,86</div></div>
-      <div class="det"><div class="det-lbl">Alvo parcial</div><div class="det-val pos">12,62</div></div>
-      <div class="det"><div class="det-lbl">Alvo final</div><div class="det-val pos">12,17</div></div>
-      
+
+  <div class="card-expanded">
+    <div class="exp-inner">
+      <div class="levels-grid">
+        <div class="level-box">
+          <div class="level-lbl">Entrada</div>
+          <div class="level-val">13,29</div>
+          <div class="level-sub">preço médio</div>
+        </div>
+        <div class="level-box">
+          <div class="level-lbl">Stop</div>
+          <div class="level-val neg">13,86</div>
+          <div class="level-sub">+0.0%</div>
+        </div>
+        <div class="level-box">
+          <div class="level-lbl">Alvo parcial</div>
+          <div class="level-val pos">12,62</div>
+          <div class="level-sub">+7.7%</div>
+        </div>
+        <div class="level-box">
+        <div class="level-lbl">Alvo final</div>
+        <div class="level-val pos">12,17</div>
+        <div class="level-sub">+7.7%</div>
+       </div>
+      </div>
+      <div class="rr-wrap">
+        <div class="rr-info">
+          <div class="rr-lbl">Risco / retorno</div>
+          <div class="rr-track">
+            <div class="rr-fill" style="width:50%"></div>
+          </div>
+        </div>
+        <div class="rr-number">2.0×</div>
+       </div>
+      <div class="chart-wrap">
+        <img src="/img/trades/rail3_29-06-2026.jpg" alt="Gráfico RAIL3 29/06/2026" loading="lazy">
+        <div class="chart-caption">
+        <span class="chart-cap-l">RAIL3 · Swing</span>
+        <span class="chart-cap-r">29/06/2026</span>
+       </div>
+      </div>
     </div>
-    <div class="det-rr"><div class="rr-label">Risco / retorno</div>
-       <div class="rr-row"><div class="rr-track"><div class="rr-fill" style="width:50%"></div></div>
-       <span class="rr-val">2.0×</span></div></div>
-    <div class="chart-wrap"><img src="/img/trades/rail3_29-06-2026.jpg" alt="Gráfico RAIL3" loading="lazy"></div>
   </div>
 </article>
 
-<article class="card" data-dir="short" data-status="aberta" data-tags="Diário" data-ativo="PNVL3">
-  <div class="card-top">
-    <div class="card-asset">
+<article class="card"
+  id="card-1"
+  data-dir="short"
+  data-status="aberta"
+  data-tags="diário"
+  data-ativo="pnvl3"
+  data-entrada="11,15">
+
+  <div class="card-collapsed" onclick="toggleCard('card-1')">
+    <div class="card-left">
       <div class="ticker">PNVL3</div>
-      <span class="badge bshort">Short</span>
+      <span class="dir-badge short"><i class="ti ti-trending-down" aria-hidden="true"></i> Short</span>
     </div>
     <div class="card-mid">
-      <div class="card-badges">
-        <span class="badge bopen">Aberta</span>
-        <span class="meta">Swing · 29/06/2026</span>
+      <div class="card-status-row">
+        <span class="status-badge s-aberta">Aberta</span>
+        <span class="card-meta">Swing · 29/06/2026</span>
       </div>
-      <p class="rational">Ação em tendência de baixa, fez um repique até a MM21 e acionou o setup PC.</p>
-      <p class="tags">Diário</p>
+      <p class="card-rat">Ação em tendência de baixa, fez um repique até a MM21 e acionou o setup PC.</p>
+      <p class="card-tags">Diário</p>
     </div>
-    <div class="card-right">
+    <div class="card-right" id="right-1">
       <div class="result nd">em aberto</div>
       <div class="levels">stop 11,5<br>alvo 10,55</div>
     </div>
   </div>
-  <div class="card-body">
-    <div class="det-grid">
-      <div class="det"><div class="det-lbl">Entrada</div><div class="det-val">11,15</div></div>
-      <div class="det"><div class="det-lbl">Stop</div><div class="det-val neg">11,5</div></div>
-      <div class="det"><div class="det-lbl">Alvo parcial</div><div class="det-val pos">10,85</div></div>
-      <div class="det"><div class="det-lbl">Alvo final</div><div class="det-val pos">10,55</div></div>
-      
+
+  <div class="card-expanded">
+    <div class="exp-inner">
+      <div class="levels-grid">
+        <div class="level-box">
+          <div class="level-lbl">Entrada</div>
+          <div class="level-val">11,15</div>
+          <div class="level-sub">preço médio</div>
+        </div>
+        <div class="level-box">
+          <div class="level-lbl">Stop</div>
+          <div class="level-val neg">11,5</div>
+          <div class="level-sub">+0.0%</div>
+        </div>
+        <div class="level-box">
+          <div class="level-lbl">Alvo parcial</div>
+          <div class="level-val pos">10,85</div>
+          <div class="level-sub">+9.1%</div>
+        </div>
+        <div class="level-box">
+        <div class="level-lbl">Alvo final</div>
+        <div class="level-val pos">10,55</div>
+        <div class="level-sub">+9.1%</div>
+       </div>
+      </div>
+      <div class="rr-wrap">
+        <div class="rr-info">
+          <div class="rr-lbl">Risco / retorno</div>
+          <div class="rr-track">
+            <div class="rr-fill" style="width:25%"></div>
+          </div>
+        </div>
+        <div class="rr-number">1.0×</div>
+       </div>
+      <div class="chart-wrap">
+        <img src="/img/trades/pnvl3_29-06-2026.jpg" alt="Gráfico PNVL3 29/06/2026" loading="lazy">
+        <div class="chart-caption">
+        <span class="chart-cap-l">PNVL3 · Swing</span>
+        <span class="chart-cap-r">29/06/2026</span>
+       </div>
+      </div>
     </div>
-    <div class="det-rr"><div class="rr-label">Risco / retorno</div>
-       <div class="rr-row"><div class="rr-track"><div class="rr-fill" style="width:25%"></div></div>
-       <span class="rr-val">1.0×</span></div></div>
-    <div class="chart-wrap"><img src="/img/trades/pnvl3_29-06-2026.jpg" alt="Gráfico PNVL3" loading="lazy"></div>
   </div>
 </article>
 
-<article class="card" data-dir="long" data-status="aberta" data-tags="Semanal" data-ativo="CPLE3">
-  <div class="card-top">
-    <div class="card-asset">
+<article class="card"
+  id="card-2"
+  data-dir="long"
+  data-status="aberta"
+  data-tags="semanal"
+  data-ativo="cple3"
+  data-entrada="15,3">
+
+  <div class="card-collapsed" onclick="toggleCard('card-2')">
+    <div class="card-left">
       <div class="ticker">CPLE3</div>
-      <span class="badge blong">Long</span>
+      <span class="dir-badge long"><i class="ti ti-trending-up" aria-hidden="true"></i> Long</span>
     </div>
     <div class="card-mid">
-      <div class="card-badges">
-        <span class="badge bopen">Aberta</span>
-        <span class="meta">Semanal · 29/06/2026</span>
+      <div class="card-status-row">
+        <span class="status-badge s-aberta">Aberta</span>
+        <span class="card-meta">Semanal · 29/06/2026</span>
       </div>
-      <p class="rational">Ação em tendência de alta. Preço corrigiu e armou setup PC de compra e Larry Williams 9.1 no gráfico semanal.</p>
-      <p class="tags">Semanal</p>
+      <p class="card-rat">Ação em tendência de alta. Preço corrigiu e armou setup PC de compra e Larry Williams 9.1 no gráfico semanal.</p>
+      <p class="card-tags">Semanal</p>
     </div>
-    <div class="card-right">
+    <div class="card-right" id="right-2">
       <div class="result nd">em aberto</div>
       <div class="levels">stop 14,49<br>alvo 16,16</div>
     </div>
   </div>
-  <div class="card-body">
-    <div class="det-grid">
-      <div class="det"><div class="det-lbl">Entrada</div><div class="det-val">15,3</div></div>
-      <div class="det"><div class="det-lbl">Stop</div><div class="det-val neg">14,49</div></div>
-      <div class="det"><div class="det-lbl">Alvo parcial</div><div class="det-val pos"></div></div>
-      <div class="det"><div class="det-lbl">Alvo final</div><div class="det-val pos">16,16</div></div>
-      
+
+  <div class="card-expanded">
+    <div class="exp-inner">
+      <div class="levels-grid">
+        <div class="level-box">
+          <div class="level-lbl">Entrada</div>
+          <div class="level-val">15,3</div>
+          <div class="level-sub">preço médio</div>
+        </div>
+        <div class="level-box">
+          <div class="level-lbl">Stop</div>
+          <div class="level-val neg">14,49</div>
+          <div class="level-sub">-6.7%</div>
+        </div>
+        <div class="level-box">
+          <div class="level-lbl">Alvo parcial</div>
+          <div class="level-val pos"></div>
+          <div class="level-sub"></div>
+        </div>
+        <div class="level-box">
+        <div class="level-lbl">Alvo final</div>
+        <div class="level-val pos">16,16</div>
+        <div class="level-sub">+6.7%</div>
+       </div>
+      </div>
+      <div class="rr-wrap">
+        <div class="rr-info">
+          <div class="rr-lbl">Risco / retorno</div>
+          <div class="rr-track">
+            <div class="rr-fill" style="width:25%"></div>
+          </div>
+        </div>
+        <div class="rr-number">1.0×</div>
+       </div>
+      <div class="chart-wrap">
+        <img src="/img/trades/cple3_29-06-2026.jpg" alt="Gráfico CPLE3 29/06/2026" loading="lazy">
+        <div class="chart-caption">
+        <span class="chart-cap-l">CPLE3 · Semanal</span>
+        <span class="chart-cap-r">29/06/2026</span>
+       </div>
+      </div>
     </div>
-    <div class="det-rr"><div class="rr-label">Risco / retorno</div>
-       <div class="rr-row"><div class="rr-track"><div class="rr-fill" style="width:25%"></div></div>
-       <span class="rr-val">1.0×</span></div></div>
-    <div class="chart-wrap"><img src="/img/trades/cple3_29-06-2026.jpg" alt="Gráfico CPLE3" loading="lazy"></div>
   </div>
 </article>
 
-<article class="card" data-dir="long" data-status="aberta" data-tags="Semanal" data-ativo="JHSF3">
-  <div class="card-top">
-    <div class="card-asset">
+<article class="card"
+  id="card-3"
+  data-dir="long"
+  data-status="aberta"
+  data-tags="semanal"
+  data-ativo="jhsf3"
+  data-entrada="11,46">
+
+  <div class="card-collapsed" onclick="toggleCard('card-3')">
+    <div class="card-left">
       <div class="ticker">JHSF3</div>
-      <span class="badge blong">Long</span>
+      <span class="dir-badge long"><i class="ti ti-trending-up" aria-hidden="true"></i> Long</span>
     </div>
     <div class="card-mid">
-      <div class="card-badges">
-        <span class="badge bopen">Aberta</span>
-        <span class="meta">Semanal · 29/06/2026</span>
+      <div class="card-status-row">
+        <span class="status-badge s-aberta">Aberta</span>
+        <span class="card-meta">Semanal · 29/06/2026</span>
       </div>
-      <p class="rational">Ação em tendência de alta. Preço corrigiu e armou setup PC de compra e Larry Williams 9.1 no gráfico semanal.</p>
-      <p class="tags">Semanal</p>
+      <p class="card-rat">Ação em tendência de alta. Preço corrigiu e armou setup PC de compra e Larry Williams 9.1 no gráfico semanal.</p>
+      <p class="card-tags">Semanal</p>
     </div>
-    <div class="card-right">
+    <div class="card-right" id="right-3">
       <div class="result nd">em aberto</div>
       <div class="levels">stop 10,02<br>alvo 14,2</div>
     </div>
   </div>
-  <div class="card-body">
-    <div class="det-grid">
-      <div class="det"><div class="det-lbl">Entrada</div><div class="det-val">11,46</div></div>
-      <div class="det"><div class="det-lbl">Stop</div><div class="det-val neg">10,02</div></div>
-      <div class="det"><div class="det-lbl">Alvo parcial</div><div class="det-val pos">12,97</div></div>
-      <div class="det"><div class="det-lbl">Alvo final</div><div class="det-val pos">14,2</div></div>
-      
+
+  <div class="card-expanded">
+    <div class="exp-inner">
+      <div class="levels-grid">
+        <div class="level-box">
+          <div class="level-lbl">Entrada</div>
+          <div class="level-val">11,46</div>
+          <div class="level-sub">preço médio</div>
+        </div>
+        <div class="level-box">
+          <div class="level-lbl">Stop</div>
+          <div class="level-val neg">10,02</div>
+          <div class="level-sub">-9.1%</div>
+        </div>
+        <div class="level-box">
+          <div class="level-lbl">Alvo parcial</div>
+          <div class="level-val pos">12,97</div>
+          <div class="level-sub">+9.1%</div>
+        </div>
+        <div class="level-box">
+        <div class="level-lbl">Alvo final</div>
+        <div class="level-val pos">14,2</div>
+        <div class="level-sub">+27.3%</div>
+       </div>
+      </div>
+      <div class="rr-wrap">
+        <div class="rr-info">
+          <div class="rr-lbl">Risco / retorno</div>
+          <div class="rr-track">
+            <div class="rr-fill" style="width:25%"></div>
+          </div>
+        </div>
+        <div class="rr-number">1.0×</div>
+       </div>
+      <div class="chart-wrap">
+        <img src="/img/trades/jhsf3_29-06-2026.jpg" alt="Gráfico JHSF3 29/06/2026" loading="lazy">
+        <div class="chart-caption">
+        <span class="chart-cap-l">JHSF3 · Semanal</span>
+        <span class="chart-cap-r">29/06/2026</span>
+       </div>
+      </div>
     </div>
-    <div class="det-rr"><div class="rr-label">Risco / retorno</div>
-       <div class="rr-row"><div class="rr-track"><div class="rr-fill" style="width:25%"></div></div>
-       <span class="rr-val">1.0×</span></div></div>
-    <div class="chart-wrap"><img src="/img/trades/jhsf3_29-06-2026.jpg" alt="Gráfico JHSF3" loading="lazy"></div>
   </div>
 </article>
 
-<article class="card" data-dir="long" data-status="aberta" data-tags="Diário" data-ativo="PETR4">
-  <div class="card-top">
-    <div class="card-asset">
-      <div class="ticker">PETR4</div>
-      <span class="badge blong">Long</span>
-    </div>
-    <div class="card-mid">
-      <div class="card-badges">
-        <span class="badge bopen">Aberta</span>
-        <span class="meta">Day · 29/06/2026</span>
-      </div>
-      <p class="rational">Ação em tendência de alta. Preço corrigiu e armou setup PC de compra e Larry Williams 9.1 no gráfico semanal.</p>
-      <p class="tags">Diário</p>
-    </div>
-    <div class="card-right">
-      <div class="result nd">em aberto</div>
-      <div class="levels">stop 44<br>alvo 47</div>
-    </div>
-  </div>
-  <div class="card-body">
-    <div class="det-grid">
-      <div class="det"><div class="det-lbl">Entrada</div><div class="det-val">45</div></div>
-      <div class="det"><div class="det-lbl">Stop</div><div class="det-val neg">44</div></div>
-      <div class="det"><div class="det-lbl">Alvo parcial</div><div class="det-val pos">46</div></div>
-      <div class="det"><div class="det-lbl">Alvo final</div><div class="det-val pos">47</div></div>
-      
-    </div>
-    <div class="det-rr"><div class="rr-label">Risco / retorno</div>
-       <div class="rr-row"><div class="rr-track"><div class="rr-fill" style="width:50%"></div></div>
-       <span class="rr-val">2.0×</span></div></div>
-    <div class="chart-wrap"><div class="img-placeholder"><i class="ti ti-chart-candle"></i><span>Gráfico em breve</span></div></div>
-  </div>
-</article>
+<article class="card"
+  id="card-4"
+  data-dir="short"
+  data-status="aberta"
+  data-tags=""
+  data-ativo="rail3"
+  data-entrada="150">
 
-<article class="card" data-dir="long" data-status="aberta" data-tags="" data-ativo="VALE3">
-  <div class="card-top">
-    <div class="card-asset">
-      <div class="ticker">VALE3</div>
-      <span class="badge blong">Long</span>
+  <div class="card-collapsed" onclick="toggleCard('card-4')">
+    <div class="card-left">
+      <div class="ticker">RAIL3</div>
+      <span class="dir-badge short"><i class="ti ti-trending-down" aria-hidden="true"></i> Short</span>
     </div>
     <div class="card-mid">
-      <div class="card-badges">
-        <span class="badge bopen">Aberta</span>
-        <span class="meta">Swing · 29/06/2026</span>
+      <div class="card-status-row">
+        <span class="status-badge s-aberta">Aberta</span>
+        <span class="card-meta">Swing · 29/06/2026</span>
       </div>
-      <p class="rational">Ação em tendência de alta. Preço corrigiu e armou setup PC de compra e Larry Williams 9.1 no gráfico semanal.</p>
-      <p class="tags"></p>
+      <p class="card-rat"></p>
+      <p class="card-tags"></p>
     </div>
-    <div class="card-right">
+    <div class="card-right" id="right-4">
       <div class="result nd">em aberto</div>
-      <div class="levels">stop 45<br>alvo 57</div>
+      <div class="levels">stop 155<br>alvo 140</div>
     </div>
   </div>
-  <div class="card-body">
-    <div class="det-grid">
-      <div class="det"><div class="det-lbl">Entrada</div><div class="det-val">50</div></div>
-      <div class="det"><div class="det-lbl">Stop</div><div class="det-val neg">45</div></div>
-      <div class="det"><div class="det-lbl">Alvo parcial</div><div class="det-val pos">55</div></div>
-      <div class="det"><div class="det-lbl">Alvo final</div><div class="det-val pos">57</div></div>
-      
+
+  <div class="card-expanded">
+    <div class="exp-inner">
+      <div class="levels-grid">
+        <div class="level-box">
+          <div class="level-lbl">Entrada</div>
+          <div class="level-val">150</div>
+          <div class="level-sub">preço médio</div>
+        </div>
+        <div class="level-box">
+          <div class="level-lbl">Stop</div>
+          <div class="level-val neg">155</div>
+          <div class="level-sub">-3.3%</div>
+        </div>
+        <div class="level-box">
+          <div class="level-lbl">Alvo parcial</div>
+          <div class="level-val pos">145</div>
+          <div class="level-sub">+3.3%</div>
+        </div>
+        <div class="level-box">
+        <div class="level-lbl">Alvo final</div>
+        <div class="level-val pos">140</div>
+        <div class="level-sub">+6.7%</div>
+       </div>
+      </div>
+      <div class="rr-wrap">
+        <div class="rr-info">
+          <div class="rr-lbl">Risco / retorno</div>
+          <div class="rr-track">
+            <div class="rr-fill" style="width:50%"></div>
+          </div>
+        </div>
+        <div class="rr-number">2.0×</div>
+       </div>
+      <div class="chart-wrap">
+        <div class="img-placeholder"><i class="ti ti-chart-candle" aria-hidden="true"></i><span>Gráfico em breve · 1280×720px</span></div>
+        
+      </div>
     </div>
-    <div class="det-rr"><div class="rr-label">Risco / retorno</div>
-       <div class="rr-row"><div class="rr-track"><div class="rr-fill" style="width:25%"></div></div>
-       <span class="rr-val">1.0×</span></div></div>
-    <div class="chart-wrap"><div class="img-placeholder"><i class="ti ti-chart-candle"></i><span>Gráfico em breve</span></div></div>
   </div>
 </article>
   </div>
@@ -266,13 +422,12 @@
 <footer class="footer">
   <div>© 2026 João Silva</div>
   <div class="footer-links">
-    <a href="https://twitter.com/joaotrader" target="_blank" rel="noopener"><i class="ti ti-brand-x"></i></a>
-    <a href="https://t.me/joaotrader" target="_blank" rel="noopener"><i class="ti ti-brand-telegram"></i></a>
-    <a href="https://instagram.com/joaotrader" target="_blank" rel="noopener"><i class="ti ti-brand-instagram"></i></a>
+    <a href="https://twitter.com/joaotrader" target="_blank" rel="noopener" aria-label="Twitter"><i class="ti ti-brand-x"></i></a>
+    <a href="https://t.me/joaotrader" target="_blank" rel="noopener" aria-label="Telegram"><i class="ti ti-brand-telegram"></i></a>
+    <a href="https://instagram.com/joaotrader" target="_blank" rel="noopener" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
   </div>
-  <div class="updated">Atualizado: 29/06/2026, 22:34:00</div>
+  <div>Atualizado: 30/06/2026, 08:39:20</div>
 </footer>
-
 <script src="app.js"></script>
 </body>
 </html>

@@ -91,36 +91,18 @@
     },
     {
       "data_abertura": "29/06/2026",
-      "ativo": "PETR4",
-      "direcao": "Long",
-      "entrada": "45",
-      "stop": "44",
-      "alvo_parcial": "46",
-      "alvo_final": "47",
+      "ativo": "RAIL3",
+      "direcao": "Short",
+      "entrada": "150",
+      "stop": "155",
+      "alvo_parcial": "145",
+      "alvo_final": "140",
       "saida": "",
       "resultado_pct": "",
       "risco_retorno": "2,0×",
       "status": "Aberta",
-      "timeframe": "Day",
-      "racional": "Ação em tendência de alta. Preço corrigiu e armou setup PC de compra e Larry Williams 9.1 no gráfico semanal.",
-      "tags": "Diário",
-      "notificar": "Não",
-      "imagem_url": ""
-    },
-    {
-      "data_abertura": "29/06/2026",
-      "ativo": "VALE3",
-      "direcao": "Long",
-      "entrada": "50",
-      "stop": "45",
-      "alvo_parcial": "55",
-      "alvo_final": "57",
-      "saida": "",
-      "resultado_pct": "",
-      "risco_retorno": "1,4×",
-      "status": "Aberta",
       "timeframe": "Swing",
-      "racional": "Ação em tendência de alta. Preço corrigiu e armou setup PC de compra e Larry Williams 9.1 no gráfico semanal.",
+      "racional": "",
       "tags": "",
       "notificar": "",
       "imagem_url": ""
@@ -189,11 +171,11 @@
     }
   ],
   "stats": {
-    "total_trades": 6,
-    "abertas": 6,
+    "total_trades": 5,
+    "abertas": 5,
     "win_rate": 0,
     "retorno_acumulado": 0,
     "subscribers": 1,
-    "ultima_atualizacao": "2026-06-30T01:34:00.506Z"
+    "ultima_atualizacao": "2026-06-30T11:39:20.589Z"
   }
 }
