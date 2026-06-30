@@ -29,7 +29,7 @@
       "racional": "",
       "tags": "",
       "notificar": "Sim",
-      "imagem_url": ""
+      "imagem_url": "https://drive.google.com/file/d/16pVxUvemYJAE7rdF6g5wBGlSjNNqBAXO/view?usp=drive_link"
     },
     {
       "data_abertura": "29/06/2026",
@@ -46,15 +46,15 @@
       "timeframe": "Swing",
       "racional": "",
       "tags": "",
-      "notificar": "",
-      "imagem_url": ""
+      "notificar": "Sim",
+      "imagem_url": "https://drive.google.com/file/d/1apLnSPrPxY2hkfvK54Lk5jvvUuF9_lXh/view?usp=drive_link"
     },
     {
       "data_abertura": "29/06/2026",
       "ativo": "CPLE3",
       "direcao": "Long",
       "entrada": "15,3",
-      "stop": "14,54",
+      "stop": "14,49",
       "alvo_parcial": "",
       "alvo_final": "16,16",
       "saida": "",
@@ -64,8 +64,8 @@
       "timeframe": "Semanal",
       "racional": "",
       "tags": "",
-      "notificar": "",
-      "imagem_url": ""
+      "notificar": "Sim",
+      "imagem_url": "https://drive.google.com/file/d/1jI0geSXeVqOIyL0lkqFlfDMKfD8giD8f/view?usp=drive_link"
     },
     {
       "data_abertura": "29/06/2026",
@@ -82,78 +82,78 @@
       "timeframe": "Semanal",
       "racional": "",
       "tags": "",
-      "notificar": "",
-      "imagem_url": ""
+      "notificar": "Sim",
+      "imagem_url": "https://drive.google.com/file/d/1gccJP_5tnaVJq36eAAOqMqvvJyC_0GmT/view?usp=drive_link"
     }
   ],
   "mensal": [
     {
-      "ano": "2025",
+      "ano": "2026",
       "mes": "1",
       "mes_nome": "janeiro",
-      "retorno_pct": "3,10%",
-      "num_trades": "4",
-      "win_rate": "75%",
-      "max_drawdown": "-1,20%",
-      "notas": "Início de ano positivo com rompimentos em energia."
+      "retorno_pct": "0,00%",
+      "num_trades": "0",
+      "win_rate": "0%",
+      "max_drawdown": "0,00%",
+      "notas": ""
     },
     {
-      "ano": "2025",
+      "ano": "2026",
       "mes": "2",
       "mes_nome": "fevereiro",
-      "retorno_pct": "-1,80%",
-      "num_trades": "3",
-      "win_rate": "33%",
-      "max_drawdown": "-4,10%",
-      "notas": "Mês difícil. FOMC surpreendeu. Stops respeitados."
+      "retorno_pct": "",
+      "num_trades": "",
+      "win_rate": "",
+      "max_drawdown": "",
+      "notas": ""
     },
     {
-      "ano": "2025",
+      "ano": "2026",
       "mes": "3",
       "mes_nome": "março",
-      "retorno_pct": "7,20%",
-      "num_trades": "5",
-      "win_rate": "80%",
-      "max_drawdown": "-0,80%",
-      "notas": "Melhor mês do ano. Commodities e cripto alinhados."
+      "retorno_pct": "",
+      "num_trades": "",
+      "win_rate": "",
+      "max_drawdown": "",
+      "notas": ""
     },
     {
-      "ano": "2025",
+      "ano": "2026",
       "mes": "4",
       "mes_nome": "abril",
-      "retorno_pct": "4,80%",
-      "num_trades": "4",
-      "win_rate": "75%",
-      "max_drawdown": "-1,50%",
-      "notas": "Bom aproveitamento de earnings de bancos."
+      "retorno_pct": "",
+      "num_trades": "",
+      "win_rate": "",
+      "max_drawdown": "",
+      "notas": ""
     },
     {
-      "ano": "2025",
+      "ano": "2026",
       "mes": "5",
       "mes_nome": "maio",
-      "retorno_pct": "-0,70%",
-      "num_trades": "4",
-      "win_rate": "50%",
-      "max_drawdown": "-2,30%",
-      "notas": "Mês neutro. Ruído eleitoral nos EUA afetou posições."
+      "retorno_pct": "",
+      "num_trades": "",
+      "win_rate": "",
+      "max_drawdown": "",
+      "notas": ""
     },
     {
-      "ano": "2025",
+      "ano": "2026",
       "mes": "6",
       "mes_nome": "junho",
-      "retorno_pct": "5,80%",
-      "num_trades": "5",
-      "win_rate": "80%",
-      "max_drawdown": "-1,00%",
-      "notas": "Energia e cripto puxaram resultado. Redução pré-FOMC."
+      "retorno_pct": "",
+      "num_trades": "",
+      "win_rate": "",
+      "max_drawdown": "",
+      "notas": ""
     }
   ],
   "stats": {
     "total_trades": 4,
     "abertas": 3,
     "win_rate": 0,
-    "retorno_acumulado": 18,
+    "retorno_acumulado": 0,
     "subscribers": 1,
-    "ultima_atualizacao": "2026-06-30T00:19:49.491Z"
+    "ultima_atualizacao": "2026-06-30T00:31:57.056Z"
   }
 }
