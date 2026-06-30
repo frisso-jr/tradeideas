@@ -1,0 +1,159 @@
+{
+  "config": {
+    "nome": "João Silva",
+    "bio": "Swing trade em ações BR e cripto desde 2018.",
+    "estrategia": "Análise técnica + macro",
+    "twitter": "@joaotrader",
+    "instagram": "@joaotrader",
+    "telegram_canal": "t.me/joaotrader",
+    "cor_destaque": "#1D9E75",
+    "timezone": "America/Sao_Paulo",
+    "moeda_padrao": "BRL",
+    "github_repo": "joaosilva/trade-ideas",
+    "dominio": "joaosilva.trades"
+  },
+  "trades": [
+    {
+      "data_abertura": "29/06/2026",
+      "ativo": "RAIL3",
+      "direcao": "Short",
+      "entrada": "13,29",
+      "stop": "13,86",
+      "alvo_parcial": "12,62",
+      "alvo_final": "12,17",
+      "saida": "",
+      "resultado_pct": "",
+      "risco_retorno": "2,0×",
+      "status": "Aberta",
+      "timeframe": "Swing",
+      "racional": "",
+      "tags": "",
+      "notificar": "Sim",
+      "imagem_url": ""
+    },
+    {
+      "data_abertura": "29/06/2026",
+      "ativo": "PNVL3",
+      "direcao": "Short",
+      "entrada": "11,15",
+      "stop": "11,5",
+      "alvo_parcial": "10,85",
+      "alvo_final": "10,55",
+      "saida": "",
+      "resultado_pct": "",
+      "risco_retorno": "1,7×",
+      "status": "Aberta",
+      "timeframe": "Swing",
+      "racional": "",
+      "tags": "",
+      "notificar": "",
+      "imagem_url": ""
+    },
+    {
+      "data_abertura": "29/06/2026",
+      "ativo": "CPLE3",
+      "direcao": "Long",
+      "entrada": "15,3",
+      "stop": "14,54",
+      "alvo_parcial": "",
+      "alvo_final": "16,16",
+      "saida": "",
+      "resultado_pct": "",
+      "risco_retorno": "1,1×",
+      "status": "Aberta",
+      "timeframe": "Semanal",
+      "racional": "",
+      "tags": "",
+      "notificar": "",
+      "imagem_url": ""
+    },
+    {
+      "data_abertura": "29/06/2026",
+      "ativo": "JHSF3",
+      "direcao": "Long",
+      "entrada": "11,46",
+      "stop": "10,02",
+      "alvo_parcial": "12,97",
+      "alvo_final": "14,2",
+      "saida": "",
+      "resultado_pct": "",
+      "risco_retorno": "1,9×",
+      "status": "Fechada",
+      "timeframe": "Semanal",
+      "racional": "",
+      "tags": "",
+      "notificar": "",
+      "imagem_url": ""
+    }
+  ],
+  "mensal": [
+    {
+      "ano": "2025",
+      "mes": "1",
+      "mes_nome": "janeiro",
+      "retorno_pct": "3,10%",
+      "num_trades": "4",
+      "win_rate": "75%",
+      "max_drawdown": "-1,20%",
+      "notas": "Início de ano positivo com rompimentos em energia."
+    },
+    {
+      "ano": "2025",
+      "mes": "2",
+      "mes_nome": "fevereiro",
+      "retorno_pct": "-1,80%",
+      "num_trades": "3",
+      "win_rate": "33%",
+      "max_drawdown": "-4,10%",
+      "notas": "Mês difícil. FOMC surpreendeu. Stops respeitados."
+    },
+    {
+      "ano": "2025",
+      "mes": "3",
+      "mes_nome": "março",
+      "retorno_pct": "7,20%",
+      "num_trades": "5",
+      "win_rate": "80%",
+      "max_drawdown": "-0,80%",
+      "notas": "Melhor mês do ano. Commodities e cripto alinhados."
+    },
+    {
+      "ano": "2025",
+      "mes": "4",
+      "mes_nome": "abril",
+      "retorno_pct": "4,80%",
+      "num_trades": "4",
+      "win_rate": "75%",
+      "max_drawdown": "-1,50%",
+      "notas": "Bom aproveitamento de earnings de bancos."
+    },
+    {
+      "ano": "2025",
+      "mes": "5",
+      "mes_nome": "maio",
+      "retorno_pct": "-0,70%",
+      "num_trades": "4",
+      "win_rate": "50%",
+      "max_drawdown": "-2,30%",
+      "notas": "Mês neutro. Ruído eleitoral nos EUA afetou posições."
+    },
+    {
+      "ano": "2025",
+      "mes": "6",
+      "mes_nome": "junho",
+      "retorno_pct": "5,80%",
+      "num_trades": "5",
+      "win_rate": "80%",
+      "max_drawdown": "-1,00%",
+      "notas": "Energia e cripto puxaram resultado. Redução pré-FOMC."
+    }
+  ],
+  "stats": {
+    "total_trades": 4,
+    "abertas": 3,
+    "win_rate": 0,
+    "retorno_acumulado": 18,
+    "subscribers": 1,
+    "ultima_atualizacao": "2026-06-30T00:19:49.491Z"
+  }
+}
