@@ -90,21 +90,57 @@
       "imagem_local": "/img/trades/jhsf3_29-06-2026.jpg"
     },
     {
-      "data_abertura": "29/06/2026",
-      "ativo": "RAIL3",
+      "data_abertura": "30/06/2026",
+      "ativo": "CAML3",
       "direcao": "Short",
-      "entrada": "150",
-      "stop": "155",
-      "alvo_parcial": "145",
-      "alvo_final": "140",
+      "entrada": "5,05",
+      "stop": "5,2",
+      "alvo_parcial": "4,82",
+      "alvo_final": "4,15",
       "saida": "",
       "resultado_pct": "",
-      "risco_retorno": "2,0×",
+      "risco_retorno": "6,0×",
       "status": "Aberta",
       "timeframe": "Swing",
       "racional": "",
       "tags": "",
-      "notificar": "",
+      "notificar": "Sim",
+      "imagem_url": ""
+    },
+    {
+      "data_abertura": "30/06/2026",
+      "ativo": "PRNR3",
+      "direcao": "Short",
+      "entrada": "17,64",
+      "stop": "18,1",
+      "alvo_parcial": "17,16",
+      "alvo_final": "14,8",
+      "saida": "",
+      "resultado_pct": "",
+      "risco_retorno": "6,2×",
+      "status": "Aberta",
+      "timeframe": "Swing",
+      "racional": "",
+      "tags": "",
+      "notificar": "Sim",
+      "imagem_url": ""
+    },
+    {
+      "data_abertura": "30/06/2026",
+      "ativo": "YDUQ3",
+      "direcao": "Short",
+      "entrada": "8,7",
+      "stop": "9,17",
+      "alvo_parcial": "8,13",
+      "alvo_final": "7,56",
+      "saida": "",
+      "resultado_pct": "",
+      "risco_retorno": "2,4×",
+      "status": "Aberta",
+      "timeframe": "Swing",
+      "racional": "",
+      "tags": "",
+      "notificar": "Sim",
       "imagem_url": ""
     }
   ],
@@ -171,11 +207,11 @@
     }
   ],
   "stats": {
-    "total_trades": 5,
-    "abertas": 5,
+    "total_trades": 7,
+    "abertas": 7,
     "win_rate": 0,
     "retorno_acumulado": 0,
     "subscribers": 1,
-    "ultima_atualizacao": "2026-06-30T11:39:20.589Z"
+    "ultima_atualizacao": "2026-06-30T13:49:21.173Z"
   }
 }
