@@ -26,8 +26,8 @@
       "risco_retorno": "2,0×",
       "status": "Aberta",
       "timeframe": "Swing",
-      "racional": "",
-      "tags": "",
+      "racional": "Ação em tendência de baixa, fez um repique até a MM21 e acionou o setup PC.",
+      "tags": "diario",
       "notificar": "Sim",
       "imagem_url": "https://drive.google.com/file/d/16pVxUvemYJAE7rdF6g5wBGlSjNNqBAXO/view?usp=drive_link"
     },
@@ -44,8 +44,8 @@
       "risco_retorno": "1,7×",
       "status": "Aberta",
       "timeframe": "Swing",
-      "racional": "",
-      "tags": "",
+      "racional": "Ação em tendência de baixa, fez um repique até a MM21 e acionou o setup PC.",
+      "tags": "diario",
       "notificar": "Sim",
       "imagem_url": "https://drive.google.com/file/d/1apLnSPrPxY2hkfvK54Lk5jvvUuF9_lXh/view?usp=drive_link"
     },
@@ -62,8 +62,8 @@
       "risco_retorno": "1,1×",
       "status": "Aberta",
       "timeframe": "Semanal",
-      "racional": "",
-      "tags": "",
+      "racional": "Ação em tendência de alta. Preço corrigiu e armou setup PC de compra e Larry Williams 9.1 no gráfico semanal.",
+      "tags": "semanal",
       "notificar": "Sim",
       "imagem_url": "https://drive.google.com/file/d/1jI0geSXeVqOIyL0lkqFlfDMKfD8giD8f/view?usp=drive_link"
     },
@@ -78,12 +78,30 @@
       "saida": "",
       "resultado_pct": "",
       "risco_retorno": "1,9×",
-      "status": "Fechada",
+      "status": "Aberta",
       "timeframe": "Semanal",
-      "racional": "",
-      "tags": "",
+      "racional": "Ação em tendência de alta. Preço corrigiu e armou setup PC de compra e Larry Williams 9.1 no gráfico semanal.",
+      "tags": "semanal",
       "notificar": "Sim",
       "imagem_url": "https://drive.google.com/file/d/1gccJP_5tnaVJq36eAAOqMqvvJyC_0GmT/view?usp=drive_link"
+    },
+    {
+      "data_abertura": "29/06/2026",
+      "ativo": "Petr4",
+      "direcao": "Long",
+      "entrada": "45",
+      "stop": "44",
+      "alvo_parcial": "46",
+      "alvo_final": "47",
+      "saida": "",
+      "resultado_pct": "",
+      "risco_retorno": "",
+      "status": "Aberta",
+      "timeframe": "Day",
+      "racional": "Ação em tendência de alta. Preço corrigiu e armou setup PC de compra e Larry Williams 9.1 no gráfico semanal.",
+      "tags": "SEMANal",
+      "notificar": "Não",
+      "imagem_url": ""
     }
   ],
   "mensal": [
@@ -149,11 +167,11 @@
     }
   ],
   "stats": {
-    "total_trades": 4,
-    "abertas": 3,
+    "total_trades": 5,
+    "abertas": 5,
     "win_rate": 0,
     "retorno_acumulado": 0,
     "subscribers": 1,
-    "ultima_atualizacao": "2026-06-30T00:31:57.056Z"
+    "ultima_atualizacao": "2026-06-30T01:23:13.272Z"
   }
 }
